@@ -1,2 +1,6 @@
-build:
-  version: "1"
+spring:
+    datasource:
+      url: {cipher}8a6ee5cc99159774356f35df08fd2c873da0e9315d3db1898555aa4f8fc74545655c6ca95462c9a7d73bed7d70476bdb
+      driverClassName: {cipher}7c9be11c71bd086a7b3702557534573d0ccd00a69720fae112763310cb2d8dd0
+      username: {cipher}a59778f1917b35518939fa3a605627eff2ba30bd04838c2b94815ab02ee1e2ef
+      password: {cipher}db4e4a469ea26d6fb716585fe8e6c47976ecbe5817bc84ac2f606eea8ceabae1
