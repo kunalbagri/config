@@ -1,5 +1,5 @@
 server:
-  port: 8071
+  port: "{cipher}37c9aa04317cfb00e191915384be72084b6abbeac628afcdd31094df7eeb45ad"
 
 eureka:
   instance:
