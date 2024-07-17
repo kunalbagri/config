@@ -6,3 +6,15 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8071/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+  info:
+    env:
+      enabled: true
