@@ -6,3 +6,30 @@ spring:
     password: "{cipher}3d7da2c076e1ed3286465a8b8a69f008af608a305e932188adbc519f60fefa297b541f53b985d9a8fe0e8174bf5d006d"
     properties.mail.smtp.auth: true
     properties.mail.smtp.starttls.enable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+endpoints:
+  shutdown:
+    enabled: true
